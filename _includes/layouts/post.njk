@@ -7,33 +7,11 @@ layout: layouts/base.njk
   
   <p>{{ content | safe }}</p>
 
-  <footer>
-    <div>
-      <time datetime="{{ date | htmlDateString }}">
-        {{ date | readableDate }}
-      </time>
-      <span>❤️</span>
-      <small>
-        <span>{{ from }}</span>
-      </small>
-    </div>
-    
-    <ul>
-      {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-      {%- if nextPost %}
-        <li>
-          <span>Next:</span>
-          <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
-        </li>{% endif %}
-
-      {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-      {%- if previousPost %}
-        <li>
-          <span>Previous:</span>
-          <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
-        </li>
-      {% endif %}
-    </ul>
-  </footer>
+  <time datetime="{{ date | htmlDateString }}">
+    {{ date | readableDate }}
+  </time>
+  <span>❤️</span>
+  <small>
+    <span>{{ from }}</span>
+  </small>
 </article>
-
