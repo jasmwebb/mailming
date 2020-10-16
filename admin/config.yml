@@ -12,7 +12,7 @@ collections:
   - name: "posts"
     label: "Posts"
     folder: "posts"
-    slug: "{{year}}-{{month}}-{{day}}/{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
