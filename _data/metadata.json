@@ -1,10 +1,8 @@
 {
   "title": "Mailming",
-  "url": "https://mailming.netlify.app/",
   "description": "Virtual snail mail for meems.",
   "author": {
     "name": "Jasmine Webb",
-    "email": "jmwebb.94@gmail.com",
     "url": "https://jasmwebb.github.io/"
   }
 }
