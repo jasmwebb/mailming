@@ -33,6 +33,7 @@ header {
     line-height: 0;
     padding: 0 1.5rem;
     letter-spacing: 2px;
+    font-style: italic;
   }
 
   h2 {
@@ -40,9 +41,14 @@ header {
   }
 
   nav ul {
+    display: flex;
     list-style-type: none;
     text-transform: uppercase;
     font-weight: 600;
+
+    li {
+      padding-right: 1.5rem;
+    }
   }
 }
 

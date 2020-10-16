@@ -34,6 +34,7 @@ header h1 {
   line-height: 0;
   padding: 0 1.5rem;
   letter-spacing: 2px;
+  font-style: italic;
 }
 
 header h2 {
@@ -41,9 +42,16 @@ header h2 {
 }
 
 header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style-type: none;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+header nav ul li {
+  padding-right: 1.5rem;
 }
 
 small {
