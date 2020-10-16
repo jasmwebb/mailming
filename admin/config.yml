@@ -1,0 +1,15 @@
+backend:
+  name: git-gateway
+  branch: main
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hideen", default: "layouts/post.njk" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "From", name: "from", widget: "select", options: ["큰 미밍", "작은 미밍"] }
+      - { label: "Letter", name: "body", widget: "markdown" }
