@@ -3,6 +3,12 @@ $text-color: midnightblue;
 $accent-color-1: crimson;
 $accent-color-2: mediumturquoise;
 
+@mixin lg-screen {
+  @media only screen and (min-width: 700px) {
+    @content;
+  }
+}
+
 html {
   background:$accent-color-1;
   background: linear-gradient(90deg, $accent-color-1 0%,$accent-color-2 100%);
@@ -12,7 +18,8 @@ body {
   font-family: system-ui, sans-serif;
   color: $text-color;
   background: $bg-color;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 1.5rem;
 }
 
 a {
@@ -67,19 +74,36 @@ small {
 // Postlist
 main ul li {
   display: grid;
-  grid-template-columns: auto auto 14ch 1fr;
-  margin-bottom: 2.5rem;
-  gap: 1em;
-  align-items: end;
-  line-height: 0;
+  list-style: none;
+  grid-template-columns: min-content 9ch 1fr;
+  align-items: center;
+  column-gap: 1em;
+  row-gap: 0.5em;
+  margin-bottom: 2.15rem;  
+
+  @include lg-screen {
+    grid-template-columns: auto auto 14ch 1fr;
+    margin-bottom: 1.15rem; 
+  }
 
   strong {
     font-size: 1.35rem;
+    font-weight: 600;
     letter-spacing: 2px;
+    grid-column: 2 / span 3;
+
+    @include lg-screen {
+      grid-column: auto ;
+    }
   }
 
   time {
     font-size: 0.9rem;
+    grid-column: 1 / span 2;
+
+    @include lg-screen {
+      grid-column: auto ;
+    }
   }
 }
 
@@ -94,7 +118,9 @@ main article {
   }
 
   p {
-    width: 75ch;
+    @include lg-screen {
+      width: 75ch;
+    }
 
     &:last-of-type {
       border-bottom: 2px solid $accent-color-2;

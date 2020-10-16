@@ -11,7 +11,7 @@ collections:
     folder: "posts"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hideen", default: "layouts/post.njk" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
       - { label: "From", name: "from", widget: "select", options: ["큰 미밍", "작은 미밍"] }
