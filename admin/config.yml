@@ -5,12 +5,9 @@ backend:
 media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
 
-<<<<<<< HEAD
 slug:
   clean_accents: true
 
-=======
->>>>>>> parent of 8077ff2... Contrain images to 100% of post width
 collections:
   - name: "posts"
     label: "Posts"
