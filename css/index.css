@@ -61,9 +61,8 @@ small span {
 main ul li {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto min-content 15ch 1fr;
-      grid-template-columns: auto -webkit-min-content 15ch 1fr;
-      grid-template-columns: auto min-content 15ch 1fr;
+  -ms-grid-columns: auto auto 14ch 1fr;
+      grid-template-columns: auto auto 14ch 1fr;
   margin-bottom: 2.5rem;
   gap: 1em;
   -webkit-box-align: end;

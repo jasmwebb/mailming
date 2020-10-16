@@ -61,7 +61,7 @@ small {
 // Postlist
 main ul li {
   display: grid;
-  grid-template-columns: auto min-content 15ch 1fr;
+  grid-template-columns: auto auto 14ch 1fr;
   margin-bottom: 2.5rem;
   gap: 1em;
   align-items: end;
