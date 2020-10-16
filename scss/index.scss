@@ -1,0 +1,102 @@
+$bg-color: snow;
+$text-color: midnightblue;
+$accent-color-1: crimson;
+$accent-color-2: mediumturquoise;
+
+html {
+  background:$accent-color-1;
+  background: linear-gradient(90deg, $accent-color-1 0%,$accent-color-2 100%);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: $text-color;
+  background: $bg-color;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: $accent-color-2;
+}
+
+a:hover {
+  border-bottom: 2px solid $accent-color-1;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    line-height: 0;
+    padding: 0 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+small {
+  text-transform: uppercase;
+  color: $bg-color;
+  font-size: 0.7rem;
+
+  span {
+    background-color: $accent-color-1;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+
+// Postlist
+main ul li {
+  display: grid;
+  grid-template-columns: auto min-content 15ch 1fr;
+  margin-bottom: 2.5rem;
+  gap: 1em;
+  align-items: end;
+  line-height: 0;
+
+  strong {
+    font-size: 1.35rem;
+    letter-spacing: 2px;
+  }
+
+  time {
+    font-size: 0.9rem;
+  }
+}
+
+// Post
+main article {
+  padding: 0 1.5rem;
+
+  h3 {
+    font-size: 1.35rem;
+    letter-spacing: 2px;
+    color: $accent-color-2;
+  }
+
+  p {
+    width: 75ch;
+
+    &:last-of-type {
+      border-bottom: 2px solid $accent-color-2;
+    }
+  }
+  
+
+  & > span {
+    margin: 0 0.5ch;
+  }
+}

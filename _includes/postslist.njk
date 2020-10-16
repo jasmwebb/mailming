@@ -1,15 +1,16 @@
 <ul>
   {%- for post in postslist | reverse %}
     <li>
+      <span>💌</span>
       <strong>
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>
       </strong>
       <time datetime="{{ post.date | htmlDateString }}">
         {{ post.date | readableDate }}
       </time>
-      {%- for tag in post.data.tags %}
-        <span>{{ tag }}</span>
-      {%- endfor %}
+      <small>
+        <span>{{ post.data.from }}</span>
+      </small>
     </li>
   {%- endfor %}
 </ul>

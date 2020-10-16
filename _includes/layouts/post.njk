@@ -2,5 +2,16 @@
 layout: layouts/base.njk
 ---
 
-<h3>{{ title }}</h3>
-<p>{{ content | safe }}</p>
+<article>
+  <h3>{{ title }}</h3>
+  
+  <p>{{ content | safe }}</p>
+
+  <time datetime="{{ date | htmlDateString }}">
+    {{ date | readableDate }}
+  </time>
+  <span>❤️</span>
+  <small>
+    <span>{{ from }}</span>
+  </small>
+</article>

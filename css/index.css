@@ -1,0 +1,104 @@
+html {
+  background: crimson;
+  background: -webkit-gradient(linear, left top, right top, from(crimson), to(mediumturquoise));
+  background: linear-gradient(90deg, crimson 0%, mediumturquoise 100%);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: midnightblue;
+  background: snow;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: mediumturquoise;
+}
+
+a:hover {
+  border-bottom: 2px solid crimson;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  line-height: 0;
+  padding: 0 1.5rem;
+  letter-spacing: 2px;
+}
+
+header h2 {
+  font-size: 1.15rem;
+}
+
+header nav ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+small {
+  text-transform: uppercase;
+  color: snow;
+  font-size: 0.7rem;
+}
+
+small span {
+  background-color: crimson;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+main ul li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto min-content 15ch 1fr;
+      grid-template-columns: auto -webkit-min-content 15ch 1fr;
+      grid-template-columns: auto min-content 15ch 1fr;
+  margin-bottom: 2.5rem;
+  gap: 1em;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  line-height: 0;
+}
+
+main ul li strong {
+  font-size: 1.35rem;
+  letter-spacing: 2px;
+}
+
+main ul li time {
+  font-size: 0.9rem;
+}
+
+main article {
+  padding: 0 1.5rem;
+}
+
+main article h3 {
+  font-size: 1.35rem;
+  letter-spacing: 2px;
+  color: mediumturquoise;
+}
+
+main article p {
+  width: 75ch;
+}
+
+main article p:last-of-type {
+  border-bottom: 2px solid mediumturquoise;
+}
+
+main article > span {
+  margin: 0 0.5ch;
+}
