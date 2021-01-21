@@ -1,14 +1,10 @@
-## Mail + Miming
-
-If you don't  know what that means, then you're not the intended audience.
-
-This is a "private" blog made to emulate snail mail between two people. 
+This is a "private" blog (is there such thing as true privacy on the internet?) made to emulate snail mail between two people, myself being one of them. 
 
 > Why not just email/message that person directly? 
 
-The idea is for us (the aforementioned two people) to *indirectly* communicate in a second language that is not native to me. 
+The idea is for the aforementioned two people to *indirectly* communicate in a second language that is not their primary language of communication, as a means of language practice.
 
-Given this is a language we don't normally use together, taking notifications and read receipts out of the equation makes the possibility of embarassing ourselves less intimidating. Additionally, writing in a medium not catered towards instant communication removes the pressure of having to write quickly.
+Taking notifications and read receipts out of the equation makes the possibility of embarrassment less intimidating. Additionally, writing in a medium not catered towards instant communication removes the pressure of having to write quickly, and encourages long-form writing.
 
 ---
 
